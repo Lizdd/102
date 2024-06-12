@@ -1,0 +1,24 @@
+black_color = (0, 0, 0)
+white_color = (255, 255, 255)
+red_color = (255, 0, 0)
+redLight_color = (255, 21, 21)
+gray_color = (112, 128, 144)
+green_color = (0, 255, 0)
+greenLight_color = (51, 255, 51)
+blue_color = (0, 0, 255)
+game_layout_display= pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption('F1 Race Road Game')
+time_clock=pygame.time.Clock()
+car_photo = pygame.image.load(os.getcwd() + '\\images/car.png')
+left_c = pygame.image.load(os.getcwd() + '\\images/car_left.png')
+right_c = pygame.image.load(os.getcwd() + '\\images/car_right.png')
+photo_obstacle = pygame.image.load(os.getcwd() + '\\images/obstacle.png')
+texture_photo = pygame.image.load(os.getcwd() + '\\images/texture.png')
+(c_width, c_height) = car_photo.get_rect().size
+(c_left_width, c_left_height) = left_c.get_rect().size
+(c_right_width, c_right_height) = right_c.get_rect().size
+(t_width, t_height) = photo_obstacle.get_rect().size
+(txtwidth, txtheight) = texture_photo.get_rect().size
+
+icon = pygame.image.load(os.getcwd() + '\\images/logo.png')
+pygame.display.set_icon(icon)
